@@ -1,0 +1,26 @@
+#move the HEAD back to the specified log ID
+#hard reset will also update files
+#soft reset will not update any files, no staged changes will be unstaged
+#mixed reset (default) will not update any files, staged changes will be unstaged
+
+git reset --soft <commit ID>
+git reset --mixed <commit ID>
+git reset --hard <commit ID>
+
+Move the head back n commits
+
+git reset HEAD~1 --mixed
+
+
+#view last n commits
+
+git log -n
+
+#view commits that might not be stored in the log after rewriting history
+#useful if you need to revert a hard reset, not part of the repo, store locally
+
+git reflog
+
+#push a commit that overwrites remote history, requires force
+
+git push --force
