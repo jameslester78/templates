@@ -9,7 +9,7 @@ git reset --hard <commit ID>
 
 Move the head back n commits
 
-git reset HEAD~1 --mixed
+git reset HEAD~n --mixed
 
 
 #view last n commits
