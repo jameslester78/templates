@@ -1,0 +1,11 @@
+#create environment
+conda create --env_name temp
+
+#list environments
+conda info --envs
+
+#delete an environment
+conda remove --name temenv_namep --all
+
+#activate an environment
+conda activate env_name

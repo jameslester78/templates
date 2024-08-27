@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "secretsmanager:DescribeSecret",
+                "secretsmanager:List*",
+                "secretsmanager:Get*"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:secretsmanager:eu-north-1:999:secret:secret-name-ARLpgI"
+            ]
+        }
+    ]
+}

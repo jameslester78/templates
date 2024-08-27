@@ -1,0 +1,1 @@
+these files represent a simplified version of security set up for a recent project

@@ -1,0 +1,16 @@
+import pyodbc
+import os
+
+connectString = 'Driver={ODBC Driver 17 for SQL Server};Server='
+connectString += f'{server};Database={database};Uid={os.environ['rdsUser']};Pwd={os.environ['rdsPass']};'
+
+insertUsers =   "insert into table1 (field1,field2) "\
+                "select field3, field4 "\
+                "from table2 "\
+                "where fielf5 = 'i'"
+
+cnxn  = pyodbc.connect(connectString, autocommit=False) 
+crsr = cnxn.cursor()
+crsr.execute(insertUsers)
+cnxn.commit()
+cnxn.close()
