@@ -26,3 +26,11 @@ print(np3[1,:]) #print the second row, and all columns of an array
 np4 = np.array([[0,1],[2,7]])
 print(np.mean(np3))
 print(np.mean(np4))
+
+for x in np.nditer(np4): print (x) #iterate over a 2d numpy array, row by row then by column
+
+
+np.random.seed(127) #seed the random number so that repeat code runs generate same results
+print (np.random.randint(1,7)) #rand between 1 and 6 inclusive	
+
+np.transpose(np4) #transpose array
