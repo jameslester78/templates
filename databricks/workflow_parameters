@@ -1,0 +1,10 @@
+#define parameter in the workflow ui
+
+#retrieve the parameter within notebook:
+dbutils.widgets.text("param_name")
+
+#run notebook with ability to alter parameter value for debugging
+#include the following before you calling the param value
+#to create a widget for the parameter
+dbutils.widget.text("param_name","default_value")
+
