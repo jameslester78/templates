@@ -1,5 +1,8 @@
 import json
 
+
+#handling non ascii charecters in the json.dumps function
+
 value = 'Ï'
 
 j = {'x':value}
